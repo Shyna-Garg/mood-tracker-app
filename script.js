@@ -11,26 +11,6 @@ let container = document.querySelector(".container")
 let body = document.body;
 
 
-// happy.addEventListener("click", ()=>{
-//     body.style.background = "#FFD700";
-//     emojiBox.innerHTML= " ";
-//     document.querySelector("p").innerHTML= " ";
-//     document.querySelector("h2").innerHTML= " ";
-//     container.textContent ="Waah! Tusi bahut Khush lag rahe ho , eda hi reha kro sohne lgde oo! 😊"
-//     container.style.color = "black";
-
-// })
-
-// sad.addEventListener("click", ()=>{
-//     body.style.background = "blue";
-//     emojiBox.innerHTML= " ";
-//     document.querySelector("p").innerHTML= " ";
-//     document.querySelector("h2").innerHTML= " ";
-//     container.textContent ="Oo koini tnsn n le, sb chnga hovega! 😊"
-//     container.style.color = "white";
-
-// })
-
 function changeMood(bgColor, textColor, message) {
     body.style.background = bgColor;
     emojiBox.innerHTML = "";
@@ -38,7 +18,6 @@ function changeMood(bgColor, textColor, message) {
     document.querySelector("h2").innerHTML = "";
     container.textContent = message;
     container.style.color = textColor;
-
 }
 
 happy.addEventListener("click", function() { 
@@ -73,6 +52,6 @@ dil.addEventListener("click", function() {
     changeMood("hotpink", "black", "Dil ka dariya beh hi gy......");
 });
 document.querySelector("#reset").addEventListener("click", function() {
-    location.reload(); // Page refresh hovega te wapas emojis show honge
+    location.reload(); 
 });
 
